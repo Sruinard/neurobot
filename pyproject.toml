@@ -7,7 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
-lerobot = {path = "lerobot"}
+lerobot = {path = "lerobot", extras = ["feetech"]}
+torch = "<2.3.0"
+pyserial = "^3.5"
 
 
 [build-system]
